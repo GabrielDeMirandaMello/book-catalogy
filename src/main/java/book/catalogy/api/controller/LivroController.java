@@ -5,7 +5,6 @@ import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.servers.Server;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -51,7 +50,7 @@ public interface LivroController {
                     "Endpoints dos Livros"
             }
     )
-    ResponseEntity<List<Livro>> buscarLivroPorTermo(@Param(value = "termo") String termo);
+    ResponseEntity<List<Livro>> buscarLivroPorTermo(@RequestParam String termo);
 
     @PutMapping("/{id}")
     @Operation(
@@ -61,7 +60,7 @@ public interface LivroController {
                     "Endpoints dos Livros"
             }
     )
-    ResponseEntity<Livro> atualziarLivroPorId(@PathVariable Long id);
+    ResponseEntity<Livro> atualziarLivroPorId(@PathVariable Long id, @RequestBody Livro livroAtualizado);
 
     @DeleteMapping("/{id}")
     @Operation(

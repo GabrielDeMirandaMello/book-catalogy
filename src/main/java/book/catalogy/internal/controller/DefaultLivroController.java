@@ -41,8 +41,8 @@ public class DefaultLivroController implements LivroController {
     }
 
     @Override
-    public ResponseEntity<Livro> atualziarLivroPorId(Long id) {
-        return this.atualizarLivro.execute(id);
+    public ResponseEntity<Livro> atualziarLivroPorId(Long id, Livro livroAtualizado) {
+        return this.atualizarLivro.execute(id, livroAtualizado);
     }
 
     @Override

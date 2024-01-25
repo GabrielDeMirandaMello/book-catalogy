@@ -5,5 +5,5 @@ import org.springframework.http.ResponseEntity;
 
 public interface AtualizarLivro {
 
-    ResponseEntity<Livro> execute(Long id);
+    ResponseEntity<Livro> execute(Long id,  Livro livroAtualizado);
 }

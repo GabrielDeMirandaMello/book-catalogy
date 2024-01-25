@@ -8,12 +8,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface LivroRepository extends JpaRepository<Livro, Long> {
-
-//    @Query(value = "SELECT * FROM livro " +
-//            "WHERE titulo LIKE LOWER(concat('%', :termo, '%')) " +
-//            "OR autor LIKE LOWER(concat('%', :termo, '%')) " +
-//            "OR editora LIKE LOWER(concat('%', :termo, '%'))")
-//    List<Livro> findByTituloAndAutorAndEditoraContainsIgnoreCase(String termo);
-
     Optional<Livro> findByTituloIgnoreCase(String titulo);
+    Optional<List<Livro>> findAllByTituloContainsIgnoreCase(String termo);
+    Optional<List<Livro>> findAllByAutorContainsIgnoreCase(String termo);
+    Optional<List<Livro>> findAllByEditoraContainsIgnoreCase(String termo);
 }
