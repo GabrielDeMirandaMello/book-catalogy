@@ -28,7 +28,14 @@ em uma biblioteca, utilizando Java 17.
 <strong>APIs:</strong>
 
 - Post: /livros
-- Json
+  ```
+  {
+    "titulo":"A Arte da Guerra",
+    "autor":"sun Tzu",
+    "editora":"Companhia das Letras",
+    "dataPublicacao":"2003-03-30"
+  }
+  ```
 - Put: /livros/{id}
 - Json
 - Delete: /livros/{id}
