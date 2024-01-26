@@ -37,7 +37,15 @@ em uma biblioteca, utilizando Java 17.
   }
   ```
 - Put: /livros/{id}
-- Json
+  ```
+  {
+      "id": 1,
+      "titulo": "A Arte da Guerra",
+      "autor": "sun Tzu",
+      "editora": "Companhia das Letras",
+      "dataPublicacao": "2003-03-30"
+  }
+  ```
 - Delete: /livros/{id}
 - Get: /livros?termo={termo}
 - Get: /livros/contagem
