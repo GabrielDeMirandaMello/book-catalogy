@@ -27,14 +27,14 @@ em uma biblioteca, utilizando Java 17.
 ---
 <strong>APIs:</strong>
 
-> Post: /livros
-> Json
-> Put: /livros/{id}
-> Json
-> Delete: /livros/{id}
-> Get: /livros?termo={termo}
-> Get: /livros/contagem
-> Get: /livros/{id}
+- Post: /livros
+- Json
+- Put: /livros/{id}
+- Json
+- Delete: /livros/{id}
+- Get: /livros?termo={termo}
+- Get: /livros/contagem
+- Get: /livros/{id}
 
 ---
 <strong>Tecnologias Usadas:</strong>
@@ -46,8 +46,9 @@ em uma biblioteca, utilizando Java 17.
 5. Lombok
 6. Spring Web
 7. Mockito
-8. JUnit
+8. JUnit5
 9. Swagger
+    
 ---
 <strong>Documentação swagger:</strong>
 
