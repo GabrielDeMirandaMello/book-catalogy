@@ -42,7 +42,7 @@ class DefaultDeletarLivroTest {
 
     @Test
     @DisplayName(value = "Deletar livro por id e validar o retorno do código Http")
-    void execute() {
+    void deletarLivroComSucesso() {
         when(this.livroRepository.findById(1L)).thenReturn(Optional.of(livro));
         ResponseEntity<?> resposta = this.defaultDeletarLivro.execute(1L);
 
@@ -53,7 +53,7 @@ class DefaultDeletarLivroTest {
 
     @Test
     @DisplayName(value = "Não deletar livro por id e validar o retorno do código Http")
-    void executeFail() {
+    void falhaAoDeletarLivro() {
         when(this.livroRepository.findById(1L)).thenReturn(Optional.empty());
         ResponseEntity<?> resposta = this.defaultDeletarLivro.execute(1L);
 

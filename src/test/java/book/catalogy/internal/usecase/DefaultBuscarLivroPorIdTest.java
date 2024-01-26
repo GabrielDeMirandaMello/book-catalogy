@@ -41,7 +41,7 @@ class DefaultBuscarLivroPorIdTest {
 
     @Test
     @DisplayName(value = "Validando se está retornando o livro e o codigo corretamente")
-    void execute() {
+    void buscarLivroComSucesso() {
         when(this.livroRepository.findById(1L)).thenReturn(Optional.of(this.livro));
         ResponseEntity<Livro> resposta = defaultBuscarLivroPorId.execute(this.livro.getId());
 
@@ -51,7 +51,7 @@ class DefaultBuscarLivroPorIdTest {
 
     @Test
     @DisplayName(value = "Validando se está retornando o codigo de erro correto")
-    void executeFail() {
+    void falhaAoBuscarLivroPorId() {
         when(this.livroRepository.findById(1L)).thenReturn(Optional.empty());
         ResponseEntity<Livro> resposta = defaultBuscarLivroPorId.execute(this.livro.getId());
 
