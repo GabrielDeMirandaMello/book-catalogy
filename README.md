@@ -24,6 +24,7 @@ em uma biblioteca, utilizando Java 17.
 5. Seu container mysql já estara criado
 6. Volte para a pasta raiz do projeto, abra o cmd e execute este comando para rodar a aplicação
 7. Comando -> mvn spring-boot:run
+8. Se quiser rodar os testes unitarios, na pasta raiz execute o comando -> mvn test
 ---
 <strong>EndPoints:</strong>
 
