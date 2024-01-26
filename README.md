@@ -1,5 +1,7 @@
 # Sistema de Catálogo de Livros
-Desenvolvimento de uma API para gerenciar um sistema de catálogo de livros
+<strong>Contexto:</strong>
+
+- Desenvolvimento de uma API para gerenciar um sistema de catálogo de livros
 em uma biblioteca, utilizando Java 17.
 ---
 <strong>Objetivo:</strong>
