@@ -26,3 +26,30 @@ em uma biblioteca, utilizando Java 17.
 7. Comando -> mvn spring-boot:run
 ---
 <strong>APIs:</strong>
+
+> Post: /livros
+> Json
+> Put: /livros/{id}
+> Json
+> Delete: /livros/{id}
+> Get: /livros?termo={termo}
+> Get: /livros/contagem
+> Get: /livros/{id}
+
+---
+<strong>Tecnologias Usadas:</strong>
+
+1. Java 17
+2. Spring Boot 3.1.8
+3. Spring Data JPA
+4. Validation
+5. Lombok
+6. Spring Web
+7. Mockito
+8. JUnit
+9. Swagger
+---
+<strong>Documentação swagger:</strong>
+
+- Somente entrar no link: http://localhost:8080/swagger-ui/index.html após a inicialização da aplicação.
+
