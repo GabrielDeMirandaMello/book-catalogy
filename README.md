@@ -4,9 +4,9 @@ em uma biblioteca, utilizando Java 17.
 ---
 <strong>Objetivo:</strong>
 
-Criar uma aplicação Spring Boot que forneça endpoints para a realização de
-operações CRUD em um banco de dados de livros. As operações devem incluir validações
-específicas para os campos de dados dos livros.
+- Criar uma aplicação Spring Boot que forneça endpoints para a realização de
+  operações CRUD em um banco de dados de livros. As operações devem incluir validações
+  específicas para os campos de dados dos livros.
 ---
 <strong>Requisitos:</strong>
 
