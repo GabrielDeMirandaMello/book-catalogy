@@ -25,8 +25,10 @@ em uma biblioteca, utilizando Java 17.
 6. Volte para a pasta raiz do projeto, abra o cmd e execute este comando para rodar a aplicação
 7. Comando -> mvn spring-boot:run
 ---
-<strong>APIs:</strong>
+<strong>EndPoints:</strong>
 
+> Se estiver usando localmente é http://localhost:8080 + o endpoint que estiver abaixo:
+   
 - Post: /livros
   ```
   {
