@@ -5,15 +5,9 @@ import book.catalogy.internal.entity.Livro;
 import book.catalogy.internal.repository.LivroRepository;
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.core.Local;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Service
 public class DefaultAdicionarLivro implements AdicionarLivro {
