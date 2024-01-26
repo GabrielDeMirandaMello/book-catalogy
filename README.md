@@ -42,11 +42,10 @@ em uma biblioteca, utilizando Java 17.
 - Put: /livros/{id}
   ```
   {
-      "id": 1,
       "titulo": "A Arte da Guerra",
       "autor": "sun Tzu",
       "editora": "Companhia das Letras",
-      "dataPublicacao": "2003-03-30"
+      "dataPublicacao": "2003-03-20"
   }
   ```
 - Delete: /livros/{id}
