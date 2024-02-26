@@ -14,6 +14,7 @@ em uma biblioteca, utilizando Java 17.
 
 - Ter o Java 17 previamente instalado em sua maquina.
 - Ter o docker previamente instalado em sua maquina.
+- Ter o maven previamente instalado em sua maquina.
 ---
 <strong>Instalação:</strong>
 
